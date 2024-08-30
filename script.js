@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleButton = document.getElementById('theme-toggle');
-    const themeLink = document.getElementById('theme-link');
+document.querySelector('.menu-hamburguer').addEventListener('click', function() {
+    document.querySelector('.menu-cascata').classList.toggle('show');
+});
 
-    themeToggleButton.addEventListener('click', () => {
-        if (themeLink.getAttribute('href') === 'light-theme.css') {
-            themeLink.setAttribute('href', 'dark-theme.css');
-            themeToggleButton.textContent = 'Modo Claro';
-        } else {
-            themeLink.setAttribute('href', 'light-theme.css');
-            themeToggleButton.textContent = 'Modo Escuro';
-        }
-    });
+document.querySelector('.menu-sucos > a').addEventListener('click', function(event) {
+    event.preventDefault();
+    const sucosMenu = document.querySelector('.menu-sucos');
+    sucosMenu.classList.toggle('show-sucos');
+    if (sucosMenu.classList.contains('show-sucos')) {
+        sucosMenu.querySelector('ul').style.display = 'block';
+    } else {
+        sucosMenu.querySelector('ul').style.display = 'none';
+    }
 });
