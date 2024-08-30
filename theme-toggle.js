@@ -1,5 +1,3 @@
-theme-toggle.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const themeButton = document.getElementById('toggle-theme');
     const themeStylesheet = document.getElementById('theme-stylesheet');
