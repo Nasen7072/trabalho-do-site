@@ -70,7 +70,7 @@ nav {
     padding: 0;
     margin: 0;
     background: #444;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .menu-cascata li:hover > ul {
@@ -83,18 +83,12 @@ nav {
     background-color: #ffcc00;
 }
 
-.menu-cascata li:nth-child(odd) a {
-    background-color: #ffcc00;
-}
-
-.menu-cascata li:nth-child(even) a {
-    background-color: #4caf50;
-}
-
+.menu-cascata li:nth-child(odd) a,
 .menu-cascata ul li:nth-child(odd) a {
     background-color: #ffcc00;
 }
 
+.menu-cascata li:nth-child(even) a,
 .menu-cascata ul li:nth-child(even) a {
     background-color: #4caf50;
 }
@@ -120,13 +114,9 @@ nav {
     flex-direction: column;
 }
 
-.show-sucos ul {
-    display: block !important;
-}
-
-main {
+.main {
     padding: 20px;
-    margin-bottom: 60px; /* Adiciona espaço para o rodapé */
+    margin-bottom: 60px; /* Adds space for the footer */
 }
 
 h2 {
@@ -171,5 +161,5 @@ footer {
     padding: 5px 0;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0;
 }
